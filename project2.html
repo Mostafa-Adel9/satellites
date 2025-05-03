@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الأقمار الصناعية</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #7986cb;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #3f51b5;
+            border-bottom: 2px solid #3f51b5;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .satellite-type {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .satellite-type {
+                flex-direction: row;
+            }
+        }
+
+        .satellite-type h3 {
+            color: #3f51b5;
+            margin-bottom: 10px;
+        }
+
+        .satellite-info {
+            flex: 3;
+        }
+
+        .satellite-image {
+            flex: 1;
+            margin-right: 20px;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .satellite-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item {
+            border-right: 3px solid #3f51b5;
+            padding: 0 15px 15px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-item:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: #3f51b5;
+            border-radius: 50%;
+            position: absolute;
+            right: -9px;
+            top: 5px;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: #3f51b5;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #3f51b5;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>عالم الأقمار الصناعية</h1>
+        <p>رحلة تطور الأقمار الصناعية من 1960 إلى الآن</p>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#types">أنواع الأقمار</a>
+        <a href="#history">التاريخ والتطور</a>
+        <a href="#comparison">مقارنة الأقمار</a>
+        <a href="#about">من أنا</a>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>مرحباً بك في عالم الأقمار الصناعية</h2>
+            <p>هذا الموقع هو دليلك الشامل لاستكشاف عالم الأقمار الصناعية وفهم تطورها التاريخي وأنواعها المختلفة. تعرف على كيفية تطور هذه التقنية المذهلة منذ بداياتها وحتى يومنا هذا.</p>
+            <div class="video-container">
+                <iframe src="world.jpg" alt="فيديو تعريفي عن الأقمار الصناعية"></iframe>
+            </div>
+        </section>
+
+        <section id="types">
+            <h2>أنواع الأقمار الصناعية</h2>
+            
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="etesal.jpg" alt="صورة لقمر اتصالات">
+                </div>
+                <div class="satellite-info">
+                    <h3>أقمار الاتصالات</h3>
+                    <p>تستخدم لنقل إشارات الاتصالات (الهاتف، الإنترنت، البث التلفزيوني) حول العالم. من أشهر الأمثلة عليها أقمار إنتلسات وإنمارسات وستارلينك.</p>
+                </div>
+            </div>
+
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="melaha.jpg" alt="صورة لقمر ملاحة">
+                </div>
+                <div class="satellite-info">
+                    <h3>أقمار الملاحة</h3>
+                    <p>تستخدم لتحديد المواقع على سطح الأرض، مثل نظام تحديد المواقع العالمي (GPS) الأمريكي ونظام GLONASS الروسي ونظام Galileo الأوروبي.</p>
+                </div>
+            </div>
+
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="estsh3ar.jpg" alt="صورة لقمر استشعار عن بعد">
+                </div>
+                <div class="satellite-info">
+                    <h3>أقمار الاستشعار عن بعد</h3>
+                    <p>تستخدم لمراقبة سطح الأرض لأغراض مختلفة مثل رصد الطقس، ومراقبة الموارد الطبيعية، ودراسة التغيرات البيئية والاستخدامات العسكرية.</p>
+                </div>
+            </div>
+
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="taks.jpg" alt="صورة لقمر طقس">
+                </div>
+                <div class="satellite-info">
+                    <h3>أقمار الطقس</h3>
+                    <p>تستخدم لمراقبة الطقس والمناخ العالمي، وتساعد في التنبؤ بالأحوال الجوية والكوارث الطبيعية مثل الأعاصير والفيضانات والحرائق.</p>
+                </div>
+            </div>
+
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="abhath.jpg" alt="صورة لقمر أبحاث علمية">
+                </div>
+                <div class="satellite-info">
+                    <h3>أقمار الأبحاث العلمية</h3>
+                    <p>تستخدم في الدراسات والأبحاث العلمية، مثل تلسكوب هابل الفضائي الذي يدرس الكون، وأقمار مراقبة الأشعة السينية والأشعة تحت الحمراء.</p>
+                </div>
+            </div>
+
+            <div class="satellite-type">
+                <div class="satellite-image">
+                    <img src="mhtat.jpg" alt="صورة لمحطة الفضاء الدولية">
+                </div>
+                <div class="satellite-info">
+                    <h3>محطات الفضاء</h3>
+                    <p>مثل محطة الفضاء الدولية (ISS)، وهي منشآت ضخمة تدور حول الأرض وتستضيف رواد الفضاء لإجراء التجارب والأبحاث في بيئة الجاذبية الصغرى.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>تاريخ وتطور الأقمار الصناعية</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1957-1969: بدايات عصر الفضاء</div>
+                    <p>شهدت هذه الفترة الخطوات الأولى في استكشاف الفضاء وإطلاق الأقمار الصناعية، وكانت جزءًا من المنافسة بين القوى العظمى خلال الحرب الباردة.</p>
+                    <ul>
+                        <li>1957: إطلاق سبوتنيك 1، أول قمر صناعي في التاريخ</li>
+                        <li>1960: إطلاق TIROS-1، أول قمر صناعي للأرصاد الجوية، وإكو 1 للاتصالات</li>
+                        <li>1962: تلستار 1، أول قمر صناعي للاتصالات نقل بثاً تلفزيونياً مباشراً بين أمريكا وأوروبا</li>
+                        <li>1964: أقمار سينكوم، أول أقمار اتصالات في المدار الثابت بالنسبة للأرض</li>
+                    </ul>
+                    <div class="video-container">
+                        <iframe src="افتُتح عصر الفضاء بإطلاق أول قمر صناعي عام 1957. لكن.. على يد أي دولة؟.mp4" alt="فيديو عن بدايات عصر الفضاء"></iframe>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1970-1989: عصر الاتصالات والبث</div>
+                    <p>شهدت هذه الفترة تطوراً كبيراً في استخدام الأقمار الصناعية لأغراض الاتصالات والبث التلفزيوني وبدايات أنظمة الملاحة.</p>
+                    <ul>
+                        <li>1972: إطلاق أول أقمار لاندسات لمراقبة موارد الأرض</li>
+                        <li>1974-1979: إطلاق سلسلة أقمار إنتلسات التي وفرت تغطية عالمية للاتصالات</li>
+                        <li>1978: إطلاق أول قمر صناعي في نظام GPS الأمريكي</li>
+                        <li>1980s: انتشار أقمار البث التلفزيوني المباشر (DBS)</li>
+                    </ul>
+                    <div class="video-container">
+                        <iframe src="شرح اتصالات الأقمار الصناعية.mp4" alt="فيديو عن عصر الاتصالات والبث"></iframe>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1990-2009: عصر الملاحة والإنترنت</div>
+                    <p>شهدت هذه الفترة اكتمال أنظمة الملاحة العالمية وبداية استخدام الأقمار الصناعية في توفير خدمات الإنترنت والاتصالات المتقدمة.</p>
+                    <ul>
+                        <li>1993-1995: اكتمال نظام تحديد المواقع العالمي GPS الأمريكي</li>
+                        <li>1998: إطلاق أول وحدة من محطة الفضاء الدولية (ISS)</li>
+                        <li>2000: إطلاق شبكة أقمار إيريديوم للاتصالات العالمية</li>
+                        <li>2003-2007: بداية انتشار الأقمار الصناعية الصغيرة (CubeSats)</li>
+                    </ul>
+                    <div class="video-container">
+                        <iframe src="الملاحة الفضائيـــة ـ عصر الفضـــاء ـ.mp4" alt="فيديو عن عصر الملاحة والإنترنت"></iframe>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2010-الآن: عصر الكوكبات والفضاء التجاري</div>
+                    <p>يشهد العصر الحالي ثورة في استخدام كوكبات الأقمار الصناعية وصعود شركات الفضاء الخاصة وتطبيقات جديدة للأقمار الصناعية.</p>
+                    <ul>
+                        <li>2011-2018: إطلاق نظام الملاحة الأوروبي غاليليو</li>
+                        <li>2015-2019: إطلاق شبكات أقمار O3b وOneWeb لتوفير الإنترنت</li>
+                        <li>2019-2025: إطلاق آلاف الأقمار من شبكة ستارلينك</li>
+                        <li>2020-الآن: تطبيق تقنيات الذكاء الاصطناعي على بيانات الأقمار الصناعية</li>
+                    </ul>
+                    <div class="video-container">
+                        <iframe src="فلك النجوم_ الكوكبات والمجرة.mp4" alt="فيديو عن عصر الكوكبات والفضاء التجاري"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison">
+            <h2>مقارنة أنواع الأقمار الصناعية</h2>
+            
+            <table>
+                <tr>
+                    <th>نوع القمر الصناعي</th>
+                    <th>الارتفاع النموذجي</th>
+                    <th>العمر التشغيلي</th>
+                    <th>الاستخدامات الرئيسية</th>
+                </tr>
+                <tr>
+                    <td>أقمار الاتصالات</td>
+                    <td>36,000 كم (مدار ثابت)</td>
+                    <td>15-20 سنة</td>
+                    <td>الهاتف، الإنترنت، البث التلفزيوني</td>
+                </tr>
+                <tr>
+                    <td>أقمار الملاحة</td>
+                    <td>20,000 كم (مدار متوسط)</td>
+                    <td>10-15 سنة</td>
+                    <td>تحديد المواقع، الملاحة البحرية والجوية</td>
+                </tr>
+                <tr>
+                    <td>أقمار الاستشعار عن بعد</td>
+                    <td>600-800 كم (مدار منخفض)</td>
+                    <td>5-10 سنوات</td>
+                    <td>مراقبة الأرض، رسم الخرائط، رصد الموارد</td>
+                </tr>
+                <tr>
+                    <td>أقمار الطقس</td>
+                    <td>850 كم أو 36,000 كم</td>
+                    <td>7-15 سنة</td>
+                    <td>مراقبة الطقس، التنبؤ بالكوارث</td>
+                </tr>
+                <tr>
+                    <td>أقمار الأبحاث العلمية</td>
+                    <td>يختلف حسب المهمة</td>
+                    <td>5-30 سنة</td>
+                    <td>الفلك، فيزياء الفضاء، دراسة الأرض</td>
+                </tr>
+                <tr>
+                    <td>الأقمار الصغيرة (CubeSats)</td>
+                    <td>400-600 كم (مدار منخفض)</td>
+                    <td>1-3 سنوات</td>
+                    <td>التكنولوجيا التجريبية، التعليم، البحث</td>
+                </tr>
+            </table>
+
+            <div style="background-color: #e8eaf6; padding: 15px; border-radius: 5px; margin-top: 20px;">
+                <h3>معلومات إضافية عن الأقمار الصناعية</h3>
+                <ul>
+                    <li>يوجد حالياً أكثر من 6,000 قمر صناعي نشط في المدار حول الأرض.</li>
+                    <li>المدار الثابت بالنسبة للأرض (GEO) هو مدار على ارتفاع 36,000 كم يسمح للقمر الصناعي بالبقاء فوق نقطة ثابتة على الأرض.</li>
+                    <li>المدار الأرضي المنخفض (LEO) يتراوح بين 200 و2,000 كم، وهو حيث توجد معظم الأقمار الصناعية لمراقبة الأرض.</li>
+                    <li>الحطام الفضائي من الأقمار الصناعية القديمة والصواريخ المستهلكة يشكل تهديداً متزايداً للمركبات الفضائية النشطة.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>من أنا</h2>
+            <p>مرحباً! أنا طالب جامعي في جامعة القاهرة، وقد قمت بإنشاء هذا الموقع لمشاركة معرفتي ودراساتي في هذا المجال. أؤمن بأهمية نشر المعرفة العلمية بطريقة سهلة وممتعة.</p>
+            <p>هذا الموقع هو مشروع شخصي تعليمي يهدف إلى توثيق تاريخ وتطور الأقمار الصناعية، بالإضافة إلى تقديم معلومات مفيدة عن أساسيات تصميم المواقع باستخدام HTML.</p>
+            <p>إذا كان لديك أي أسئلة أو اقتراحات، فلا تتردد في التواصل معي.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>call me :+201121880129</p>
+    </footer>
+</body>
+</html>
